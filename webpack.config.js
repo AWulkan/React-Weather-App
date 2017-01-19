@@ -10,6 +10,7 @@ module.exports = {
         root: __dirname,
         // So that you don't have to specify file paths.
         alias: {
+            // Paths are relative to app.jsx
             Main: "app/components/Main.jsx",
             Nav: "app/components/Nav.jsx"
         },
