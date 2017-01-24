@@ -12,7 +12,10 @@ module.exports = {
         alias: {
             // Paths are relative to app.jsx
             Main: "app/components/Main.jsx",
-            Nav: "app/components/Nav.jsx"
+            Nav: "app/components/Nav.jsx",
+            Weather: "app/components/Weather.jsx",
+            About: "app/components/About.jsx",
+            Examples: "app/components/Examples.jsx"
         },
         // So that you don't have to specify file endings.
         extensions: ["", ".js", ".jsx"]
