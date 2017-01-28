@@ -33,7 +33,7 @@ const Weather = React.createClass({
         function renderMessage() {
             if (isLoading) {
                 return <h3>Fetching Weather...</h3>;
-            } else if (temp && location) {
+            } else if (location && temp !== null) {
                 return <WeatherMessage temp={temp} location={location}/>;
             }
         }
