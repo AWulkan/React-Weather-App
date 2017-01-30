@@ -1,6 +1,21 @@
+const webpack = require("webpack");
+
 module.exports = {
     // Where to look for code first.
-    entry: "./app/app.jsx",
+    entry: [
+        "script!jquery/dist/jquery.min.js",
+        "script!foundation-sites/dist/js/foundation.min.js",
+        "./app/app.jsx"
+    ],
+    externals: {
+        jquery: "jQuery"
+    },
+    plugins: [
+        new webpack.ProvidePlugin({
+            "$": "jquery",
+            "jQuery": "jquery"
+        })
+    ],
     // Where to output all code.
     output: {
         path: __dirname,
