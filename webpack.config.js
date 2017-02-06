@@ -35,7 +35,7 @@ module.exports = {
             WeatherMessage: "app/components/WeatherMessage.jsx",
             openWeatherMap: "app/api/openWeatherMap.jsx",
             ErrorModal: "app/components/ErrorModal.jsx",
-            applicationStyles: "app/styles/app.css"
+            applicationStyles: "app/styles/app.scss"
         },
         // So that you don't have to specify file endings.
         extensions: ["", ".js", ".jsx"]
