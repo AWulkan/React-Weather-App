@@ -1,6 +1,6 @@
 const React = require("react");
 const ReactDOM = require("react-dom");
-const {Route, Router, IndexRoute, hashHistory} = require("react-router");
+const {Route, Router, IndexRoute, browserHistory} = require("react-router");
 const Main = require("Main");
 const Weather = require("Weather");
 const About = require("About");
@@ -14,7 +14,7 @@ $(document).foundation();
 require("style!css!sass!applicationStyles");
 
 ReactDOM.render(
-    <Router history={hashHistory}>
+    <Router history={browserHistory}>
         <Route path="/" component={Main}>
             <Route path="about" component={About}/>
             <Route path="examples" component={Examples}/>
