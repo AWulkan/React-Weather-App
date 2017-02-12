@@ -1,4 +1,5 @@
 const React = require("react");
+const {browserHistory} = require("react-router");
 const WeatherForm = require("WeatherForm");
 const WeatherMessage = require("WeatherMessage");
 const openWeatherMap = require("openWeatherMap");
