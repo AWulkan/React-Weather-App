@@ -40,8 +40,7 @@ const Weather = React.createClass({
 
         if (location && location.length > 0) {
             this.handleSearch(location);
-            // window.location.hash = "#/";
-            browserHistory.push('/');
+            browserHistory.push("/");
         }
     },
 
@@ -50,8 +49,7 @@ const Weather = React.createClass({
 
         if (location && location.length > 0) {
             this.handleSearch(location);
-            // window.location.hash = "#/";
-            browserHistory.push('/');
+            browserHistory.push("/");
         }
     },
 

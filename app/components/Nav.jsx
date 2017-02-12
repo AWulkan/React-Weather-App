@@ -10,7 +10,6 @@ const Nav = React.createClass({
 
         if (location.length > 0) {
             this.refs.search.value = "";
-            // window.location.hash = `#/?location=${encodedLocation}`;
             browserHistory.push(`/?location=${encodedLocation}`);
         }
     },
