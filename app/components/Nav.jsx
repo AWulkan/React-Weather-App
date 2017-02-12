@@ -1,5 +1,5 @@
 const React = require("react");
-const {Link, IndexLink} = require("react-router");
+const {Link, IndexLink, browserHistory} = require("react-router");
 
 const Nav = React.createClass({
     onSearch: function (e) {
@@ -10,7 +10,8 @@ const Nav = React.createClass({
 
         if (location.length > 0) {
             this.refs.search.value = "";
-            window.location.hash = `#/?location=${encodedLocation}`;
+            // window.location.hash = `#/?location=${encodedLocation}`;
+            browserHistory.push(`/?location=${encodedLocation}`);
         }
     },
 
